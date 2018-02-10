@@ -1,0 +1,12 @@
+{
+  "short_name": "Westside High School App",
+  "name": "Westside High School App",
+  "icons": [
+    {
+      
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}
