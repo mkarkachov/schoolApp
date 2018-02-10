@@ -1,0 +1,124 @@
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+img {
+  vertical-align: top;
+}
+
+p {
+  margin: 0 0 18px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  border-style: none;
+}
+
+mark {
+  background: none;
+}
+
+input,
+textarea {
+  font: 14px Arial, Helvetica, sans-serif;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border-style: none;
+}
+
+label[for],
+input[type=checkbox],
+input[type=radio],
+input[type=submit],
+button,
+select {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #000;
+  font: 18px/28px Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  background: #fff;
+}
+#app{
+  background: #000;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
