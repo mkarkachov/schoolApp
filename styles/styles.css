@@ -108,6 +108,7 @@ select {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -120,5 +121,10 @@ body {
   background: #000;
   color: #fff;
   width: 100%;
-  margin: 0 auto;
+  min-height: 100%;
+}
+@media screen and (orientation: portrait) {
+  html{
+    transform: rotate(90deg);
+  }
 }
