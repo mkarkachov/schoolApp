@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather Black'), local('Merriweather-Black'),
+        url('../fonts/Merriweather-Black.woff2') format('woff2'),
+        url('../fonts/Merriweather-Black.woff') format('woff'),
+        url('../fonts/Merriweather-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 /* Global Reset */
 
 * {
@@ -18,7 +38,7 @@ h6 {
   font-weight: bold;
   line-height: normal;
   margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -46,7 +66,7 @@ img {
 }
 
 p {
-  margin: 0 0 18px;
+  margin: 0;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
@@ -83,7 +103,7 @@ mark {
 
 input,
 textarea {
-  font: 14px Arial, Helvetica, sans-serif;
+  font: 16px/1.2 Lato, Arial, Helvetica, sans-serif;
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -113,18 +133,91 @@ body {
 
 body {
   color: #000;
-  font: 18px/28px Arial, Helvetica, sans-serif;
+  font: 16px/1.2 Lato, Arial, Helvetica, sans-serif;
   min-width: 320px;
   background: #fff;
+  overflow: hidden;
 }
-#app{
-  background: #000;
+
+#app {
+  background: #9b3538 url(../images/pattern.png) repeat;
   color: #fff;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 60px 25px 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+#header{
+  background: #666;
+  padding: 10px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#header h1{
+  margin: 0;
+  font:bold 25px Merriweather, 'Times New Roman', serif;
+}
+#footer{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  padding: 10px 10px 0;
+  background: #fff;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  font-size: 10px;
+}
+.barcode{
+  width: 190px;
+  margin: 0 auto;
+}
+.barcode img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#content{
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.photo{
+  margin-right: 20px;
+  width: 32%;
+  max-width: 200px;
+}
+.photo img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text{
+  width: 65%;
+}
+.text h2{
+  font:bold 5.5vw Merriweather, 'Times New Roman', serif;
+}
+
 @media screen and (orientation: portrait) {
-  html{
+  body {
     transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: -100vw;
+    height: 100vw;
+    width: 100vh;
+    background-color: #000;
+    color: #fff;
+    overflow: auto;
   }
 }
