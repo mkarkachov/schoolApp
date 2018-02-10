@@ -206,6 +206,7 @@ body {
 }
 .text h2{
   font:bold 5.5vw Merriweather, 'Times New Roman', serif;
+  margin-bottom: 10px;
 }
 
 @media screen and (orientation: portrait) {
@@ -219,5 +220,8 @@ body {
     background-color: #000;
     color: #fff;
     overflow: auto;
+  }
+  .text h2{
+    font-size: 8.15vw;
   }
 }
